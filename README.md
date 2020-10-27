@@ -1,2 +1,2 @@
-# Message
+
 # webpack-vue

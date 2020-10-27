@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!-- [v-cloak]解决网络卡顿时，刷新页面时显示“{{msg}}”，出现闪动的问题 -->
+<style type="text/css">
+    [v-cloak]{
+        display: none;
+    }
+</style>
+</head>
+<body>
+ 
+    <div id="app">
+        <p v-cloak>{{msg}}</p>
+        <login></login>
+    </div>
+ 
+</body>
+</html>
