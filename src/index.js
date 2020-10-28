@@ -40,3 +40,19 @@ var vm = new Vue({
     render:c=> c(login) //完全覆盖div app其他内容
        
 });
+
+/*
+总结：webpack 中如何使用vue：
+1.安装vue包：cnpm i vue -S
+2.由于在默认webpack 不识别.vue 需要安装loader
+    cnpm i vue-loader vue-template-compiler -D
+    在配置文件中新增loader配置项{test:/\.vue$/,use:"vue-loader"}
+3.在入口文件 js中，导入vue模块， import Vue from 'vue'
+4.定义一个 .vue的组件
+5.使用import导入组件
+6.入口文件js中创建vm实例  render:c=> c(login) render渲染组件
+7.页面中创建一个id为app 的div 作为vm实例控制区域
+*/
+
+import a1,{title as b,aaa} from "./text"
+console.log(a1,b,aaa)

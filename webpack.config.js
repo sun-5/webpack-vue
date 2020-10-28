@@ -39,9 +39,9 @@ module.exports = {
         ]
     },
     resolve:{
-        alias:{//修改 vue 包被导入时候的路径
-            'vue$':'vue/dist/vue.js'
-        }
+        // alias:{//修改 vue 包被导入时候的路径
+        //     'vue$':'vue/dist/vue.js'
+        // }
     }
     
 
